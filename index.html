@@ -8,15 +8,17 @@
 
         <!-- Google Fonts -->
         <!-- TODO We're going to use the Google Font 'Bitter'. https://www.google.com/fonts#UsePlace:use/Collection:Bitter Link to it here -->
+        <link href='http://fonts.googleapis.com/css?family=Bitter:400,700,400italic' rel='stylesheet' type='text/css'>
 
         <!-- Foundation CSS -->
-        <!-- TODO link to foundation's normalize.css -->
-        <!-- TODO link to foundation's foundation.min.css -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="foundation.min.css">
 
         <!-- If you are using Foundation Sass, keep the head from their file. -->
 
         <!-- Our CSS -->
         <link rel="stylesheet" href="css/application.css">
+
 
         <!-- Slick.js CSS -->
         <!-- you do not have to edit this file ever. -->
@@ -35,7 +37,18 @@
                 <h4>the new restaurant by shawn cirkiel<br />poolside at the radisson</h4>
             </div>
 
-            <div><img src="images/chavez-1.jpg" alt=""></div>
+            <div id="slides">
+                <div><img src="images/chavez-1.jpg" alt=""></div>
+                <div><img src="images/chavez-2.jpg" alt=""></div>
+                <div><img src="images/chavez-3.jpg" alt=""></div>
+                <div><img src="images/chavez-4.jpg" alt=""></div>
+                <div><img src="images/chavez-5.jpg" alt=""></div>
+                <div><img src="images/chavez-6.jpg" alt=""></div>
+                <div><img src="images/chavez-7.jpg" alt=""></div>
+                <div><img src="images/chavez-8.jpg" alt=""></div>
+                <div><img src="images/chavez-9.jpg" alt=""></div>
+                <div><img src="images/chavez-10.jpg" alt=""></div>
+            </div>
             <!-- TODO there are ten images in the images folder. write a div with an image tag inside it for each of them. then wrap the images in a #slides div so that SlickJS knows how to find them -->
         </header>
 
@@ -73,25 +86,49 @@
             </div>
 
             <!-- TODO add a foundation row wrapping the menu-sections -->
+            <div class="row">
 
                 <!-- TODO write the following HTML for each of the menus.
 
-                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #menu-section-breakfast
+                There will be 6 .menu-section divs: breakfast, lunch, dinner, dessert, cocktails, and wine. Give them an ID `NAMEOFSECTION` for each section, e.g. #breackfast
 
                 Give them a small-2 columns so they line up appropriately next to each other.
 
                 One of them is active in the mockup. Which one? What kind of classname would you add to show that it is active?
 
                 -->
-                <div class="menu-section" id="NAMEOFSECTION">
-                    <h3>
-                        <!-- TODO later we will write JavaScript to toggle the menu sections, using this link -->
-                        <!-- add a class of "menu-section-item" and an ID with the section of the menu that this is, e.g. dinner, breakfast, etc. -->
-                        <a href="#">
-                            <!-- TODO name of menu section -->
-                        </a>
-                    </h3>
+
+                <div class="menu-section-item columns small-2" id="breakfast">
+                    <h3><a href="#breakfast">Breakfast</a></h3>
                 </div>
+                
+
+                <div class="menu-section-item columns small-2" id="lunch">
+                    <h3><a href="#breakfast">Lunch</a></h3>
+                </div>
+
+                <div class="menu-section-item columns small-2" id="dinner">
+                    <h3><a href="#breakfast">Dinner</a></h3>
+                </div>
+
+                <div class="menu-section-item columns small-2" id="dessert">
+                    <h3><a href="#breakfast">Dessert</a></h3>
+                </div>
+
+                <div class="menu-section-item columns small-2" id="cocktails">
+                    <h3><a href="#breakfast">Cocktails</a></h3>
+                </div>
+
+                <div class="menu-section-item columns small-2" id="wine">
+                    <h3><a href="#breakfast">Wine</a></h3>
+                </div>
+
+            </div>
+
+            </div> 
+
+
+            </div>    
 
             <!-- TODO add a foundation row to wrap around this content -->
                 <div id="menu-section-content" class="menu-section-content">
