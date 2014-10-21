@@ -12,7 +12,7 @@
 
         <!-- Foundation CSS -->
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="foundation.min.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
 
         <!-- If you are using Foundation Sass, keep the head from their file. -->
 
@@ -104,47 +104,150 @@
                 
 
                 <div class="menu-section-item columns small-2" id="lunch">
-                    <h3><a href="#breakfast">Lunch</a></h3>
+                    <h3><a href="#lunch">Lunch</a></h3>
                 </div>
 
                 <div class="menu-section-item columns small-2" id="dinner">
-                    <h3><a href="#breakfast">Dinner</a></h3>
+                    <h3><a href="#dinner">Dinner</a></h3>
                 </div>
 
                 <div class="menu-section-item columns small-2" id="dessert">
-                    <h3><a href="#breakfast">Dessert</a></h3>
+                    <h3><a href="#dessert">Dessert</a></h3>
                 </div>
 
                 <div class="menu-section-item columns small-2" id="cocktails">
-                    <h3><a href="#breakfast">Cocktails</a></h3>
+                    <h3><a href="#cocktails">Cocktails</a></h3>
                 </div>
 
                 <div class="menu-section-item columns small-2" id="wine">
-                    <h3><a href="#breakfast">Wine</a></h3>
+                    <h3><a href="#wine">Wine</a></h3>
                 </div>
 
             </div>
 
-            </div> 
-
-
-            </div>    
+                
 
             <!-- TODO add a foundation row to wrap around this content -->
-                <div id="menu-section-content" class="menu-section-content">
+           <div class="row">
+                <div id="dinner" class="menu-section-content">
                     <!-- TODO we'll add the dinner menu content here. Write two columns with the class .menu-group and the foundation column classes. -->
 
-                        <div class="menu-group">
+                        <div class="menu-group columns small-12 medium-6">
                             <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
-                            <h4></h4>
+                            <h4>Raw Bar</h4>
 
-                            <!-- TODO for each item on the menu, write a div.menu-item. -->
+                            <div class="menu-item">
+                                <div class="menu-item-dish">malpeque oyster</div>
+                                    <p class="menu-item-ingredients">prince edward island, canada</p>
+                                    <div class="menu-item-price">3</div>
+                            </div>  
 
-                                <!-- TODO inside each div.menu-item, there should be a div.menu-item-dish, a p.menu-item-ingredients, and a div.menu-item-price. -->
+                            <div class="menu-item">
+                                <div class="menu-item-dish">bluepoint oyster</div>
+                                    <p class="menu-item-ingredients">long island sound</p>
+                                    <div class="menu-item-price">3</div>
+                            </div>
 
-                                <!-- TODO we are going to do ONLY the "Raw Bar" and "Entrees" section of the dinner menu for now. You can find that content in /menu-content/menu-dinner.md We'll add the rest of the menus with JSON later. -->
+                            <div class="menu-item">
+                                <div class="menu-item-dish">seafood coctel</div>
+                                    <p class="menu-item-ingredients">shrimp, avocado, tomato, cucumber, onion</p>
+                                    <div class="menu-item-price">11</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">raw bass</div>
+                                    <p class="menu-item-ingredients">avocado, lime, guajillo</p>
+                                    <div class="menu-item-price">11</div>
+                            </div> 
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">vuelve a la vida</div>
+                                    <p class="menu-item-ingredients">squid, shrimp, salmon, spicy tomato, celer</p>
+                                    <div class="menu-item-price">9</div>
+                            </div>  
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">ceviche traditional</div>
+                                    <p class="menu-item-ingredients">avocado, tomato, jalapeño</p>
+                                    <div class="menu-item-price">9</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">hamachi</div>
+                                    <p class="menu-item-ingredients">“horchata”, orange</p>
+                                    <div class="menu-item-price">11</div>
+                            </div>  
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">vegan ceviche</div>
+                                    <p class="menu-item-ingredients">chayote, cauliflower, beet, orange</p>
+                                    <div class="menu-item-price">8</div>
+                            </div> 
+                        </div>
+
+
+                        <div class="menu-group columns small-12 medium-6">
+                            <!-- TODO Inside each .menu-group, there should be an h4 with the title. -->
+                            <h4>Entrées</h4>
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">carne asada</div>
+                                    <p class="menu-item-ingredients">flank steak, grilled onions, “pico de gallo”</p>
+                                    <div class="menu-item-price">19</div>
+                            </div>  
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">grilled hen</div>
+                                    <p class="menu-item-ingredients">cauliflower, pickle red onions, salsa verde</p>
+                                    <div class="menu-item-price">16</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">lamb en mole</div>
+                                    <p class="menu-item-ingredients">poblano, chayote, tomatoes, raisins</p>
+                                    <div class="menu-item-price">22</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">blade steak al pastor</div>
+                                    <p class="menu-item-ingredients">charred tomato, radish, onion</p>
+                                    <div class="menu-item-price">22</div>
+                            </div> 
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">striped bass</div>
+                                    <p class="menu-item-ingredients">hominy, mushrooms, chard, hoja santa, guajillo</p>
+                                    <div class="menu-item-price">23</div>
+                            </div>  
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">salmon veracruz</div>
+                                    <p class="menu-item-ingredients">tomato, onion, peppers, capers, olives</p>
+                                    <div class="menu-item-price">19</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">herb crusted mahi mahi</div>
+                                    <p class="menu-item-ingredients">salsa negra, pineapple, turnips, scallion</p>
+                                    <div class="menu-item-price">22</div>
+                            </div>  
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">grilled shrimp al mojo de ajo</div>
+                                    <p class="menu-item-ingredients">garlic, lime, tomato, tequila, greens, coronas</p>
+                                    <div class="menu-item-price">21</div>
+                            </div> 
+
+                            <div class="menu-item">
+                                <div class="menu-item-dish">oak grilled filet</div>
+                                    <p class="menu-item-ingredients">“rajas”, pasilla red wine reduction</p>
+                                    <div class="menu-item-price">36</div>
+                            </div> 
+
+                            
                         </div>
                 </div>
+            </div>     
 
         </section>
 
