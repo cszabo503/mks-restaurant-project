@@ -21,17 +21,23 @@ $(function() {
       event.preventDefault();
 
       // Assign the id of the clicked element (this) to a variable named id
-      var  = $( this );
+      var  id = $( this ).attr('id');
+
+      // console.log(id);
 
       // Remove the class 'is-active' from all menu item headings
-      $( '' ).removeClass( '' );
+      $( '.menu-section-item' ).removeClass( '.is-active' );
+
+
 
       // Add 'is-active' to this specific action that was clicked (this). is-active
       // provides the visual cue for what's active via CSS
-      $( this ).addClass( '' );
+      $( this ).addClass( '.is-active' );
 
       // Once you're started with TODO #2, call the getMenu function here,
       // passing id as the argument
+
+      getMenu(id);
 
     });
 
@@ -66,10 +72,11 @@ $(function() {
 
     function populateMenu( json ) {
       html = '';
+      // console.log(json);
 
       // start a for loop that iterates through json.length
       // add json.length into this for loop code
-      for( var i = 0; i < ; i++ ){
+      for( var i = 0; i < json.length; i++ ){
         // wrap each section in a menu-group div
         html += '<div class="menu-group columns small-12 medium-4">';
         // append inside the menu-group div a h4 with the json section name in it
@@ -84,9 +91,9 @@ $(function() {
           html += '<div class="menu-item">';
           // inside each menu-item div, create a div for dish, ingredients, and price
           // add json[i]content[j].THING where THING is dish, ingredient, price.
-          html += '<div class="menu-item-dish">' + json[i].content[j]. + '</div>';
-          html += '<p class="menu-item-ingredients">' + json[i].content[j]. + '</p>';
-          html += '<div class="menu-item-price">' + json[i].content[j]. + '</div>';
+          html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
+          html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';
+          html += '<div class="menu-item-price">' + json[i].content[j].price+ '</div>';
           html += '</div>';
         }
 
@@ -94,10 +101,10 @@ $(function() {
       }
 
       // Use `.html` to replace the contents of `.menu-section-content`
-      $( '.menu-section-content' ).html( html );
+      $( '.menu-section-content' ).html(html);
     }
 
-
+    getMenu(lunch);
 
     // TODO #4 Call getMenu with a menu of your choice and set that menu's
     // header to active so that a menu is loaded with the page by default
