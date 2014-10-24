@@ -55,28 +55,29 @@
         <!-- Address, map, hours -->
         <section class="address">
             <!-- TODO add a foundation row wrapping this content. do you know why you would add it here as a div, instead of as a class on the section.address? What would happen if you did that? -->
-
+            <div class="row">
                 <!-- TODO for each of these 3 divs (location, map, hours), add foundation column classes so that they sit side by side at large screen sizes, and stack on top of each other at a small screen size -->
-                <div class="location">
+                <div class="location columns small-12 medium-4">
                     <!-- TODO link to the hotel website and make the telephone a tel: link, and style this content -->
-                    at the Radisson Hotel
-                    111 east cesar chavez
-                    austin, texas 78701
-                    512.478.2291
+                    at the <a href="http://chavez-austin.com/">Radisson Hotel</a><br><br>
+                    111 east cesar chavez<br>
+                    austin, texas 78701<br>
+                    <a href="tel:512-478-2291">512.478.2291</tel>
                 </div>
 
-                <div class="map">
+                <div class="map columns small-12 medium-4">
                     <!-- TODO there is a map image in the images folder, link to it and make the link to go this google map: goo.gl/maps/qgnVW -->
+                    <a href="map: goo.gl/maps/qgnVW"><img src="images/map.png"/></a>
                 </div>
 
-                <div class="hours">
+                <div class="hours columns small-12 medium-4">
                     <!-- TODO style this content. use the classes .hours-label and .hours-value to determine which part is which and style it -->
-                    breakfast: 6:30–11am
-                    lunch: 11am–3pm
-                    limited menu: 3–5pm
-                    dinner: 5–10pm
+                    breakfast: 6:30–11am<br>
+                    lunch: 11am–3pm<br>
+                    limited menu: 3–5pm<br>
+                    dinner: 5–10pm<br>
                 </div>
-
+            </div>    
         </section>
 
         <!-- Menu -->
