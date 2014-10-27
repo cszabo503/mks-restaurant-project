@@ -132,9 +132,22 @@ section {
     padding-bottom: .5em;
 }
 
-
+/*.menu-section a.hovered {
+    color: rgba(34, 28, 18, 100);
+    opacity: 100%;
+    border-bottom: 3px;
+    padding-bottom: .5em;
+    border-color: rgba(34, 28, 18, 100);
+}*/
 /* TODO on the menu section links, when hovered, make them the same color but 100% opacity instead of 75% (.75) and make the bottom border the same color. */
 
+/*.menu-section a.active{
+   color: rgba(34, 28, 18, 100);
+    opacity: 100%;
+    border-bottom: 3px;
+    padding-bottom: .5em;
+    border-bottom: rgba(34, 28, 18, 100); 
+}*/
 /* TODO on the ACTIVE menu section links, make them look the same as hovered ones. How do you know if they are active? */
 
 .menu-section-content {
@@ -146,10 +159,20 @@ section {
     /* TODO give each menu item some bottom margin */
 }
 
+.menu-item-dish{
+    font-style: bold;
+}
 /* TODO style the menu-item-dish to be bold */
 
+.menu-item-ingredients{
+    font-style: italic;
+}
 /* TODO style the menu-item-ingredients to be italic and be in one line with the price. You don't need to use Foundation classes to do this, but if you want to try and see, go for it! */
-
+.menu-item-price{
+    font-style: bold;
+    opacity: 50%;
+    display: inline;
+}
 /* TODO style the menu-item-price to be bold, 50% opacity, in line with the description but have some space to the left of it. */
 
 
