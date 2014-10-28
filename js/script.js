@@ -26,13 +26,13 @@ $(function() {
       // console.log(id);
 
       // Remove the class 'is-active' from all menu item headings
-      $( '.menu-section-item' ).removeClass( '.is-active' );
+      $( '.menu-section-item' ).removeClass( 'is-active' );
 
 
 
       // Add 'is-active' to this specific action that was clicked (this). is-active
       // provides the visual cue for what's active via CSS
-      $( this ).addClass( '.is-active' );
+      $( this ).addClass( 'is-active' );
 
       // Once you're started with TODO #2, call the getMenu function here,
       // passing id as the argument
@@ -63,6 +63,9 @@ $(function() {
        // Once you're started with TODO #3, call the populateMenu function here
        // and pass json as the argument
      });
+    
+
+
     }
 
 
@@ -108,5 +111,6 @@ $(function() {
 
     // TODO #4 Call getMenu with a menu of your choice and set that menu's
     // header to active so that a menu is loaded with the page by default
+
 
 });
