@@ -95,7 +95,19 @@ $(function() {
           // inside each menu-item div, create a div for dish, ingredients, and price
           // add json[i]content[j].THING where THING is dish, ingredient, price.
           html += '<div class="menu-item-dish">' + json[i].content[j].dish + '</div>';
-          html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';
+          // if ingredients json NOT undefined -> print html !===
+            if(json[i].content[j].ingredients !== undefined){
+            html += '<p class="menu-item-ingredients">' + json[i].content[j].ingredients + '</p>';} // print this
+          // end if 
+            
+            //WRITE IF STATEMENT FOR WINE LIST
+            // if(json[i].content[j].ingredients === "string" {
+            //     return("")
+            // }
+
+            //   .menu-item-ingredients
+            // }    
+
           html += '<div class="menu-item-price">' + json[i].content[j].price+ '</div>';
           html += '</div>';
         }
